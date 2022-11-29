@@ -1,0 +1,7 @@
+<p>{{isLoading$ | async}}</p>
+<ul>
+  <li *ngFor="let post of posts$ | async">{{post.title}}</li>
+</ul>
+
+<input type="text" #title>
+<button (click)="addNewPost(title.value)">Submit</button>
